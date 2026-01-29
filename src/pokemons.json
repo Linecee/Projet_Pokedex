@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbizarre",
+    "type": "Plante / Poison",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+  },
+  {
+    "id": 4,
+    "name": "Salamèche",
+    "type": "Feu",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+  },
+  {
+    "id": 25,
+    "name": "Pikachu",
+    "type": "Électrik",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+  },
+  {
+    "id": 94,
+    "name": "Ectoplasma",
+    "type": "Spectre / Poison",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png"
+  },
+  {
+    "id": 175,
+    "name": "Togepi",
+    "type": "Fée",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/175.png"
+  },
+  {
+    "id": 37,
+    "name": "Goupix",
+    "type": "Feu",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png"
+  },
+  {
+    "id": 39,
+    "name": "Rondoudou",
+    "type": "Normal / Fée",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png"
+  }
+]
