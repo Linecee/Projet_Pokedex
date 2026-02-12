@@ -1,23 +1,36 @@
 import { useState } from "react"; 
+import PokemonImage from "./PokemonImage.jsx";
 
 function PokemonCard(props) {
-  // 1. Le State pour gérer le favori
+  //  Le State pour gérer le favori
   const [isFavorite, setIsFavorite] = useState(false);
 
-  // 2. La fonction pour cliquer
+ // le State pour gérer l'affichage des détails le type du pok dans ce cas
+  const [showType, setShowType] = useState(false);
+
+  //La fonction pour cliquer sur le bouton favori
   function toggleFavorite() {
     setIsFavorite(!isFavorite);
   }
 
+
+
   return (
     <div className="card">
     
-      <img src={props.image} alt={props.name} width="120"/>
-      
+     <PokemonImage image={props.image} name={props.name}/>
       <h2 className="card-title">{props.name}</h2>
-      
-      <p className="type">{props.type}</p>
 
+      <button onClick={() => setShowType(!showType)}   className="bouton-details">
+  {showType ? "⬆" : "⬇"}</button>
+      {showType && (
+
+        <div className="details">
+      <p className="type">{props.type}</p>
+        </div>
+      )}
+
+      
       <button 
         onClick={toggleFavorite}  
         className={isFavorite ? "fav-button active" : "fav-button"}
