@@ -1,8 +1,12 @@
-import pokemonsData from './pokemons.json';
+import pokemonsData from './data/pokemons.json';
 import PokemonList from './PokemonList.jsx';
 import { useState } from "react";
+import PokemonSearch from './PokemonSearch.jsx';
+import './styles/App.css';
+import './styles/PokemonCard.css';
+import './styles/PokemonSearch.css';
+import './styles/PokemonList.css';
 
-import './App.css';
 
 function App() {
    //  Le State pour gérer le favori
@@ -19,8 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
        <h1 className="title">My Pokémon</h1>
-        <input type="text" placeholder="Rechercher.." value={search} className="search-input"
-         onChange={(e) => setSearch(e.target.value)} />
+        <PokemonSearch search={search} setSearch={setSearch} />
          
       <PokemonList pokemons={filteredPokemons} />
 
